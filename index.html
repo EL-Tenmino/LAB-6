@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Тэнгисийн сургалтын зургийн цомог — Лаборатори 6.">
+  <title>Тэнгис · Зургийн цомог | Лаб 6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#gallery">Үндсэн агуулга руу очих</a>
+  <header class="site-header" id="home"><div class="container"><h1>Оюутны хөгжлийн булан</h1><p>Суралцъя. Бүтээе. Хөгжье.</p></div></header>
+  <nav class="site-nav" aria-label="Үндсэн цэс"><div class="container nav-inner">
+    <a class="logo" href="#home"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="1" y="1" width="22" height="22" rx="6" fill="currentColor"/><path d="M6 7h12M12 7v11" stroke="white" stroke-width="2"/></svg>Tengis.</a>
+    <ul class="nav-links"><li><a href="#home">Нүүр</a></li><li><a href="#gallery">Зургийн цомог</a></li><li><a href="#multimedia">Видео</a></li><li><a href="#about">Тухай</a></li><li><a href="#contact">Холбоо барих</a></li></ul>
+    <button id="theme-toggle" type="button" aria-pressed="false" hidden>Бараан горим</button>
+  </div></nav>
+  <main class="container page-layout">
+    <div class="main-column">
+      <section id="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Суралцах чиглэлүүд · Зургийн цомог</h2>
+        <p class="section-description">Мэдээллийн технологийн мэдлэгээ хамтдаа хөгжүүлье. Зургийн мэдээллийг товчоор эргүүлж үзээрэй.</p>
+        <div id="loader" role="status" aria-live="polite" hidden><span class="spinner" aria-hidden="true"></span><span>Цомгийн зургуудыг ачаалж байна…</span></div>
+        <div class="card-grid">
+      <article class="card" style="--i: 0">
+        <div class="flip-scene">
+          <div class="card-inner" id="card-1">
+            <div class="card-front">
+              <img src="img/photo1.jpg" width="720" height="420" alt="HTML үндэс: сургалтын зураглал" fetchpriority="high" decoding="async">
+              <div class="card-body"><span class="tag">ВЭБ ХӨГЖҮҮЛЭЛТ</span><h3>HTML үндэс</h3><p>Вэб хуудасны семантик бүтэц, гарчиг, хэсгүүд.</p><span class="card-note">01 · Сургалтын цомог</span></div>
+            </div>
+            <div class="card-back">
+              <span class="tag">ЗУРГИЙН МЭДЭЭЛЭЛ</span><h3>HTML үндэс</h3>
+              <dl><dt>Нэр</dt><dd>HTML үндэс</dd><dt>Огноо</dt><dd><time datetime="2026-10-17">2026.10.17</time></dd><dt>Газар</dt><dd>Вэб хөгжүүлэлтийн дадлага</dd></dl>
+              <p>Сургалтын жишээ зураг. Өөрийн зургаар сольж, огноо ба газрыг шинэчлээрэй.</p>
+            </div>
+          </div>
+        </div>
+        <button class="flip-button" hidden type="button" aria-pressed="false" aria-controls="card-1" aria-label="HTML үндэс: зургийн мэдээлэл харах">Мэдээлэл харах ↻</button>
+      </article>
+      <article class="card" style="--i: 1">
+        <div class="flip-scene">
+          <div class="card-inner" id="card-2">
+            <div class="card-front">
+              <img src="img/photo2.jpg" width="720" height="420" alt="CSS загварчлал: сургалтын зураглал"  decoding="async">
+              <div class="card-body"><span class="tag">ДИЗАЙН</span><h3>CSS загварчлал</h3><p>Өнгө, фонт болон зайгаар харагдах байдлыг зохиох.</p><span class="card-note">02 · Сургалтын цомог</span></div>
+            </div>
+            <div class="card-back">
+              <span class="tag">ЗУРГИЙН МЭДЭЭЛЭЛ</span><h3>CSS загварчлал</h3>
+              <dl><dt>Нэр</dt><dd>CSS загварчлал</dd><dt>Огноо</dt><dd><time datetime="2026-10-17">2026.10.17</time></dd><dt>Газар</dt><dd>Дизайны дадлага</dd></dl>
+              <p>Сургалтын жишээ зураг. Өөрийн зургаар сольж, огноо ба газрыг шинэчлээрэй.</p>
+            </div>
+          </div>
+        </div>
+        <button class="flip-button" hidden type="button" aria-pressed="false" aria-controls="card-2" aria-label="CSS загварчлал: зургийн мэдээлэл харах">Мэдээлэл харах ↻</button>
+      </article>
+      <article class="card" style="--i: 2">
+        <div class="flip-scene">
+          <div class="card-inner" id="card-3">
+            <div class="card-front">
+              <img src="img/photo3.jpg" width="720" height="420" alt="Flexbox ба Grid: сургалтын зураглал"  decoding="async">
+              <div class="card-body"><span class="tag">LAYOUT</span><h3>Flexbox ба Grid</h3><p>Мөр, баганад суурилсан responsive зохион байгуулалт.</p><span class="card-note">03 · Сургалтын цомог</span></div>
+            </div>
+            <div class="card-back">
+              <span class="tag">ЗУРГИЙН МЭДЭЭЛЭЛ</span><h3>Flexbox ба Grid</h3>
+              <dl><dt>Нэр</dt><dd>Flexbox ба Grid</dd><dt>Огноо</dt><dd><time datetime="2026-10-17">2026.10.17</time></dd><dt>Газар</dt><dd>Вэб зохиомжийн дадлага</dd></dl>
+              <p>Сургалтын жишээ зураг. Өөрийн зургаар сольж, огноо ба газрыг шинэчлээрэй.</p>
+            </div>
+          </div>
+        </div>
+        <button class="flip-button" hidden type="button" aria-pressed="false" aria-controls="card-3" aria-label="Flexbox ба Grid: зургийн мэдээлэл харах">Мэдээлэл харах ↻</button>
+      </article>
+      <article class="card" style="--i: 3">
+        <div class="flip-scene">
+          <div class="card-inner" id="card-4">
+            <div class="card-front">
+              <img src="img/photo4.jpg" width="720" height="420" alt="JavaScript үндэс: сургалтын зураглал" loading="lazy" decoding="async">
+              <div class="card-body"><span class="tag">ПРОГРАММЧЛАЛ</span><h3>JavaScript үндэс</h3><p>Товч, үйл явдал, хуудасны харилцан үйлдэл.</p><span class="card-note">04 · Сургалтын цомог</span></div>
+            </div>
+            <div class="card-back">
+              <span class="tag">ЗУРГИЙН МЭДЭЭЛЭЛ</span><h3>JavaScript үндэс</h3>
+              <dl><dt>Нэр</dt><dd>JavaScript үндэс</dd><dt>Огноо</dt><dd><time datetime="2026-10-17">2026.10.17</time></dd><dt>Газар</dt><dd>Программчлалын дадлага</dd></dl>
+              <p>Сургалтын жишээ зураг. Өөрийн зургаар сольж, огноо ба газрыг шинэчлээрэй.</p>
+            </div>
+          </div>
+        </div>
+        <button class="flip-button" hidden type="button" aria-pressed="false" aria-controls="card-4" aria-label="JavaScript үндэс: зургийн мэдээлэл харах">Мэдээлэл харах ↻</button>
+      </article>
+      <article class="card" style="--i: 4">
+        <div class="flip-scene">
+          <div class="card-inner" id="card-5">
+            <div class="card-front">
+              <img src="img/photo5.jpg" width="720" height="420" alt="Өгөгдлийн сан: сургалтын зураглал" loading="lazy" decoding="async">
+              <div class="card-body"><span class="tag">МЭДЭЭЛЛИЙН СИСТЕМ</span><h3>Өгөгдлийн сан</h3><p>Хүснэгт, түлхүүр, холбоосоор мэдээллийг зохион байгуулах.</p><span class="card-note">05 · Сургалтын цомог</span></div>
+            </div>
+            <div class="card-back">
+              <span class="tag">ЗУРГИЙН МЭДЭЭЛЭЛ</span><h3>Өгөгдлийн сан</h3>
+              <dl><dt>Нэр</dt><dd>Өгөгдлийн сан</dd><dt>Огноо</dt><dd><time datetime="2026-10-17">2026.10.17</time></dd><dt>Газар</dt><dd>Өгөгдлийн сангийн дадлага</dd></dl>
+              <p>Сургалтын жишээ зураг. Өөрийн зургаар сольж, огноо ба газрыг шинэчлээрэй.</p>
+            </div>
+          </div>
+        </div>
+        <button class="flip-button" hidden type="button" aria-pressed="false" aria-controls="card-5" aria-label="Өгөгдлийн сан: зургийн мэдээлэл харах">Мэдээлэл харах ↻</button>
+      </article>
+      <article class="card" style="--i: 5">
+        <div class="flip-scene">
+          <div class="card-inner" id="card-6">
+            <div class="card-front">
+              <img src="img/photo6.jpg" width="720" height="420" alt="Git ба GitHub: сургалтын зураглал" loading="lazy" decoding="async">
+              <div class="card-body"><span class="tag">ХУВИЛБАРЫН УДИРДЛАГА</span><h3>Git ба GitHub</h3><p>Өөрчлөлтөө commit хийж, төслөө нийтлэх.</p><span class="card-note">06 · Сургалтын цомог</span></div>
+            </div>
+            <div class="card-back">
+              <span class="tag">ЗУРГИЙН МЭДЭЭЛЭЛ</span><h3>Git ба GitHub</h3>
+              <dl><dt>Нэр</dt><dd>Git ба GitHub</dd><dt>Огноо</dt><dd><time datetime="2026-10-17">2026.10.17</time></dd><dt>Газар</dt><dd>Бие даалтын ажил</dd></dl>
+              <p>Сургалтын жишээ зураг. Өөрийн зургаар сольж, огноо ба газрыг шинэчлээрэй.</p>
+            </div>
+          </div>
+        </div>
+        <button class="flip-button" hidden type="button" aria-pressed="false" aria-controls="card-6" aria-label="Git ба GitHub: зургийн мэдээлэл харах">Мэдээлэл харах ↻</button>
+      </article>
+        </div>
+      </section>
+      <section class="sidebar-box multimedia" id="multimedia" aria-labelledby="media-title">
+        <h2 id="media-title">Суралцах мөчүүд</h2>
+        <p id="video-description">Зургаан чиглэлийг танилцуулах 12 секундийн дуугүй видео. CC товчоор Монгол хадмалыг сонгоно.</p>
+        <video controls playsinline preload="none" poster="img/photo1.jpg" aria-describedby="video-description">
+          <source src="video/clip.webm" type="video/webm">
+          <source src="video/clip.mp4" type="video/mp4">
+          <track kind="captions" src="video/clip.mn.vtt" srclang="mn" label="Монгол" default>
+          Видеог тоглуулах боломжгүй. <a href="video/clip.mp4">MP4 татах</a>.
+        </video>
+        <details><summary>Видеоны бичвэр</summary><p>HTML — бүтэц. CSS — өнгө ба загвар. Grid — мөр ба багана. JavaScript — харилцан үйлдэл. Өгөгдлийн сан — мэдээллийн зохион байгуулалт. Git — хувилбарын удирдлага.</p></details>
+        <h3>Газрын зураг · Улаанбаатар</h3>
+        <p>Газрын зургийг үзэхэд интернэт шаардлагатай.</p>
+        <iframe title="Улаанбаатар хотын төвийн газрын зураг" src="https://www.openstreetmap.org/export/embed.html?bbox=106.895%2C47.910%2C106.935%2C47.930&amp;layer=mapnik" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin"></iframe>
+        <a class="text-link" href="https://www.openstreetmap.org/#map=15/47.920/106.915" target="_blank" rel="noopener noreferrer">Газрын зургийг томоор нээх ↗</a>
+      </section>
+    </div>
+    <aside class="sidebar" aria-label="Нэмэлт мэдээлэл">
+      <section class="sidebar-box" id="about"><h2>Миний тухай</h2><p>Сайн байна уу! Намайг Тэнгис гэдэг. Би мэдээллийн системийн оюутан бөгөөд вэб хөгжүүлэлт сурч байна.</p></section>
+      <section class="sidebar-box"><h2>Судлах сэдвүүд</h2><ul class="topic-list"><li>Семантик HTML</li><li>CSS Flexbox ба Grid</li><li>Responsive дизайн</li><li>CSS animation</li><li>Хүртээмжтэй multimedia</li><li>GitHub Pages</li></ul></section>
+      <section class="sidebar-box notice"><h2>Өнөөдрийн зорилго</h2><p>Хөдөлгөөн, 3D карт, өнгөний горим болон multimedia бүхий хүртээмжтэй зургийн цомог бүтээх.</p></section>
+    </aside>
+  </main>
+  <footer class="site-footer" id="contact"><div class="container footer-inner"><p>© 2026 Тэнгис · Вэб зохиомж</p><p>Лабораторийн ажил №6 · Зургийн цомог</p></div></footer>
+</body>
+</html>
