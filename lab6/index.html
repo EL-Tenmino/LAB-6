@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="mn">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Лаб 6 — Зургийн цомог</title>
+
+
+
+  <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+
+
+
+<body>
+<a class="skip-link" href="#courses">Үндсэн агуулга руу очих</a>
+
+  <header class="site-header" id="home">
+
+    <div class="container">
+
+      <h1>Оюутны хөгжлийн булан</h1>
+
+      <p>Суралцъя. Бүтээе. Хөгжье.</p>
+
+    </div>
+
+  </header>
+
+
+
+  <nav class="site-nav" aria-label="Үндсэн цэс">
+
+    <div class="container nav-inner">
+
+      <a class="logo" href="#home">Tengis.</a>
+
+
+
+      <ul class="nav-links">
+
+        <li><a href="#home" aria-current="page">Нүүр</a></li>
+
+        <li><a href="#courses">Хичээлүүд</a></li>
+
+        <li><a href="#multimedia">Видео</a></li>
+<li><a href="#about">Тухай</a></li>
+
+        <li><a href="#contact">Холбоо барих</a></li>
+
+      </ul>
+<button id="theme-toggle" type="button" aria-pressed="false">Бараан горим</button>
+    </div>
+
+  </nav>
+
+
+
+  <main class="container page-layout">
+
+    <section id="courses" aria-labelledby="courses-title">
+
+      <h2 class="section-heading" id="courses-title">
+
+        Суралцах чиглэлүүд · Зургийн цомог
+
+      </h2>
+
+      <p class="section-description">
+
+        Мэдээллийн технологийн үндсэн мэдлэгээ хамтдаа хөгжүүлье. Картын товчийг дарж дэлгэрэнгүйг үзээрэй.
+
+      </p>
+
+
+
+      <div class="card-grid">
+
+        <article class="card" style="--i:0">
+ <div class="flip-scene"><div class="card-inner" id="card-1"><div class="card-front"><img src="img/photo1.jpg" width="720" height="420" alt="HTML бүтэцтэй кодын жишээ" loading="lazy"><div class="card-body">
+
+            <span class="tag">ВЭБ ХӨГЖҮҮЛЭЛТ</span>
+
+            <h3>HTML үндэс</h3>
+
+            <p>
+
+              Вэб хуудасны бүтэц, семантик элемент болон
+
+              форм үүсгэх аргуудыг судална.
+
+            </p>
+
+            <span class="card-note">01 · Хуудасны бүтэц</span>
+
+          </div></div>
+ <div class="card-back" aria-hidden="true" inert><span class="tag">ДЭЛГЭРЭНГҮЙ</span><h3>HTML үндэс</h3><p>
+
+              Вэб хуудасны бүтэц, семантик элемент болон
+
+              форм үүсгэх аргуудыг судална.
+
+            </p><p>Сурсан зүйлээ жижиг төсөл дээр туршиж, GitHub-д хадгалаарай.</p></div>
+ </div></div><button class="flip-button" type="button" aria-pressed="false" aria-controls="card-1" aria-label="HTML үндэс: дэлгэрэнгүйг харах">Дэлгэрэнгүй ↻</button></article>
+
+
+
+        <article class="card" style="--i:1">
+ <div class="flip-scene"><div class="card-inner" id="card-2"><div class="card-front"><img src="img/photo2.jpg" width="720" height="420" alt="CSS өнгө ба загварын жишээ" loading="lazy"><div class="card-body">
+
+            <span class="tag">ДИЗАЙН</span>
+
+            <h3>CSS загварчлал</h3>
+
+            <p>
+
+              Өнгө, фонт, хүрээ болон зай ашиглан
+
+              вэб хуудасны харагдах байдлыг сайжруулна.
+
+            </p>
+
+            <span class="card-note">02 · Өнгө ба хэлбэр</span>
+
+          </div></div>
+ <div class="card-back" aria-hidden="true" inert><span class="tag">ДЭЛГЭРЭНГҮЙ</span><h3>CSS загварчлал</h3><p>
+
+              Өнгө, фонт, хүрээ болон зай ашиглан
+
+              вэб хуудасны харагдах байдлыг сайжруулна.
+
+            </p><p>Сурсан зүйлээ жижиг төсөл дээр туршиж, GitHub-д хадгалаарай.</p></div>
+ </div></div><button class="flip-button" type="button" aria-pressed="false" aria-controls="card-2" aria-label="CSS загварчлал: дэлгэрэнгүйг харах">Дэлгэрэнгүй ↻</button></article>
+
+
+
+        <article class="card" style="--i:2">
+ <div class="flip-scene"><div class="card-inner" id="card-3"><div class="card-front"><img src="img/photo3.jpg" width="720" height="420" alt="Grid байрлалын схем" loading="lazy"><div class="card-body">
+
+            <span class="tag">LAYOUT</span>
+
+            <h3>Flexbox ба Grid</h3>
+
+            <p>
+
+              Элементүүдийг мөр, баганаар байрлуулж,
+
+              олон хэсэгтэй хуудасны макет зохионо.
+
+            </p>
+
+            <span class="card-note">03 · Байрлал ба зохион байгуулалт</span>
+
+          </div></div>
+ <div class="card-back" aria-hidden="true" inert><span class="tag">ДЭЛГЭРЭНГҮЙ</span><h3>Flexbox ба Grid</h3><p>
+
+              Элементүүдийг мөр, баганаар байрлуулж,
+
+              олон хэсэгтэй хуудасны макет зохионо.
+
+            </p><p>Сурсан зүйлээ жижиг төсөл дээр туршиж, GitHub-д хадгалаарай.</p></div>
+ </div></div><button class="flip-button" type="button" aria-pressed="false" aria-controls="card-3" aria-label="Flexbox ба Grid: дэлгэрэнгүйг харах">Дэлгэрэнгүй ↻</button></article>
+
+
+
+        <article class="card" style="--i:3">
+ <div class="flip-scene"><div class="card-inner" id="card-4"><div class="card-front"><img src="img/photo4.jpg" width="720" height="420" alt="JavaScript функцийн жишээ" loading="lazy"><div class="card-body">
+
+            <span class="tag">ПРОГРАММЧЛАЛ</span>
+
+            <h3>JavaScript үндэс</h3>
+
+            <p>
+
+              Хувьсагч, нөхцөл, давталт болон функц
+
+              ашиглаж, хуудаст үйлдэл нэмнэ.
+
+            </p>
+
+            <span class="card-note">04 · Харилцан үйлдэл</span>
+
+          </div></div>
+ <div class="card-back" aria-hidden="true" inert><span class="tag">ДЭЛГЭРЭНГҮЙ</span><h3>JavaScript үндэс</h3><p>
+
+              Хувьсагч, нөхцөл, давталт болон функц
+
+              ашиглаж, хуудаст үйлдэл нэмнэ.
+
+            </p><p>Сурсан зүйлээ жижиг төсөл дээр туршиж, GitHub-д хадгалаарай.</p></div>
+ </div></div><button class="flip-button" type="button" aria-pressed="false" aria-controls="card-4" aria-label="JavaScript үндэс: дэлгэрэнгүйг харах">Дэлгэрэнгүй ↻</button></article>
+
+
+
+        <article class="card" style="--i:4">
+ <div class="flip-scene"><div class="card-inner" id="card-5"><div class="card-front"><img src="img/photo5.jpg" width="720" height="420" alt="Холбоотой хүснэгтүүдийн схем" loading="lazy"><div class="card-body">
+
+            <span class="tag">МЭДЭЭЛЛИЙН СИСТЕМ</span>
+
+            <h3>Өгөгдлийн сан</h3>
+
+            <p>
+
+              Хүснэгт, түлхүүр болон холбоосын
+
+              тусламжтайгаар өгөгдлийг зохион байгуулна.
+
+            </p>
+
+            <span class="card-note">05 · Өгөгдлийн зохион байгуулалт</span>
+
+          </div></div>
+ <div class="card-back" aria-hidden="true" inert><span class="tag">ДЭЛГЭРЭНГҮЙ</span><h3>Өгөгдлийн сан</h3><p>
+
+              Хүснэгт, түлхүүр болон холбоосын
+
+              тусламжтайгаар өгөгдлийг зохион байгуулна.
+
+            </p><p>Сурсан зүйлээ жижиг төсөл дээр туршиж, GitHub-д хадгалаарай.</p></div>
+ </div></div><button class="flip-button" type="button" aria-pressed="false" aria-controls="card-5" aria-label="Өгөгдлийн сан: дэлгэрэнгүйг харах">Дэлгэрэнгүй ↻</button></article>
+
+
+
+        <article class="card" style="--i:5">
+ <div class="flip-scene"><div class="card-inner" id="card-6"><div class="card-front"><img src="img/photo6.jpg" width="720" height="420" alt="Git салбар ба нэгтгэлийн схем" loading="lazy"><div class="card-body">
+
+            <span class="tag">ХУВИЛБАРЫН УДИРДЛАГА</span>
+
+            <h3>Git ба GitHub</h3>
+
+            <p>
+
+              Кодын өөрчлөлтөө хадгалж, репозитори
+
+              ашиглан төслөө бусадтай хуваалцана.
+
+            </p>
+
+            <span class="card-note">06 · Төслийн удирдлага</span>
+
+          </div></div>
+ <div class="card-back" aria-hidden="true" inert><span class="tag">ДЭЛГЭРЭНГҮЙ</span><h3>Git ба GitHub</h3><p>
+
+              Кодын өөрчлөлтөө хадгалж, репозитори
+
+              ашиглан төслөө бусадтай хуваалцана.
+
+            </p><p>Сурсан зүйлээ жижиг төсөл дээр туршиж, GitHub-д хадгалаарай.</p></div>
+ </div></div><button class="flip-button" type="button" aria-pressed="false" aria-controls="card-6" aria-label="Git ба GitHub: дэлгэрэнгүйг харах">Дэлгэрэнгүй ↻</button></article>
+
+      </div>
+
+
+<section class="multimedia sidebar-box" id="multimedia" aria-labelledby="media-title">
+<h2 id="media-title"><svg width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="play-title"><title id="play-title">Видео тоглуулах</title><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M10 7 17 12 10 17Z" fill="white"/></svg> Суралцах мөчүүд</h2>
+<p id="video-description">Зургаан чиглэлийг танилцуулах богино, дуугүй видео. CC товчоор Монгол хадмалыг сонгоорой.</p>
+<video controls preload="metadata" playsinline poster="img/photo1.jpg" aria-describedby="video-description">
+<source src="video/clip.webm" type="video/webm"><source src="video/clip.mp4" type="video/mp4">
+<track kind="captions" src="video/clip.mn.vtt" srclang="mn" label="Монгол" default>
+Таны хөтөч видео дэмжихгүй байна. <a href="video/clip.mp4">Видеог татах</a>.</video>
+<details><summary>Видеоны бичвэр</summary><p>HTML — бүтэц. CSS — өнгө ба загвар. Grid — байрлал. JavaScript — үйлдэл. Өгөгдлийн сан — мэдээлэл. Git — хувилбарын удирдлага.</p></details>
+<h3>Нэмэлт хичээл: HTML</h3><p>Гадаад видеог үзэхэд интернэт шаардлагатай.</p>
+<iframe
+  title="YouTube бичлэг"
+  src="https://www.youtube-nocookie.com/embed/1y5EeZPo_Tw"
+  loading="lazy"
+  referrerpolicy="strict-origin-when-cross-origin"
+  sandbox="allow-scripts allow-same-origin allow-presentation"
+  allow="fullscreen; picture-in-picture"
+  allowfullscreen>
+</iframe>
+</section>
+    </section>
+
+    <aside class="sidebar" aria-label="Нэмэлт мэдээлэл">
+
+      <section class="sidebar-box" id="about">
+
+        <h2>Миний тухай</h2>
+
+        <p>
+
+          Сайн байна уу! Намайг Тэнгис гэдэг.
+
+          Би мэдээллийн системийн оюутан бөгөөд
+
+          вэб хөгжүүлэлт сурч байна.
+
+        </p>
+
+      </section>
+
+
+
+      <section class="sidebar-box">
+
+        <h2>Судлах сэдвүүд</h2>
+
+        <ul class="topic-list">
+
+          <li>Семантик HTML</li>
+
+          <li>CSS Flexbox</li>
+
+          <li>CSS Grid</li>
+
+          <li>Responsive дизайн</li>
+
+          <li>GitHub Pages</li>
+
+        </ul>
+
+      </section>
+
+
+
+      <section class="sidebar-box notice">
+
+        <h2>Өнөөдрийн зорилго</h2>
+
+        <p>
+
+          Flexbox болон Grid ашиглан дэлгэцийн хэмжээнд
+
+          тохирдог, цэгцтэй вэб хуудас бүтээх.
+
+        </p>
+
+      </section>
+
+    </aside>
+
+  </main>
+
+
+
+  <footer class="site-footer" id="contact">
+
+    <div class="container footer-inner">
+
+      <p>© 2026 Тэнгис · Вэб зохиомж</p>
+
+      <p>Лабораторийн ажил №6 · Animation & Multimedia</p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
