@@ -1,0 +1,53 @@
+@use "sass:string";
+@use "functions" as fn;
+
+$light-accent: #315dde;
+$dark-accent: #9bb5ff;
+$dark-background: #101827;
+
+$colors: (
+  light: (
+    bg: #ffffff,
+    surface: #ffffff,
+    text: #243047,
+    muted: #59677e,
+    accent: $light-accent,
+    accent-text: fn.contrast($light-accent, $dark: $dark-background),
+    border: #dde4ef,
+    soft: #edf1ff,
+    header: #17243d,
+    header-text: #bac9e3,
+    focus: #c47a00,
+    shadow: 0 10px 24px string.unquote("#17243d20"),
+  ),
+  dark: (
+    bg: $dark-background,
+    surface: #1c2940,
+    text: #e7edf8,
+    muted: #b4c2d9,
+    accent: $dark-accent,
+    accent-text: fn.contrast($dark-accent, $dark: $dark-background),
+    border: #3a4b65,
+    soft: #263858,
+    focus: #ffc65c,
+    shadow: 0 10px 24px string.unquote("#00000050"),
+  ),
+);
+
+$radii: (
+  radius: 14px,
+  small-radius: 8px,
+);
+$breakpoints: (
+  wide: 1000px,
+  tablet: 760px,
+  phone: 480px,
+);
+
+$motion: (
+  speed: 200ms,
+  flip-duration: 650ms,
+  enter-duration: 600ms,
+  stagger-delay: 100ms,
+  loader-duration: 800ms,
+);

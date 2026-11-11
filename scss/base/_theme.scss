@@ -1,0 +1,27 @@
+@use "sass:map";
+@use "../abstracts/tokens";
+
+:root {
+  color-scheme: light;
+
+  @each $name, $value in map.get(tokens.$colors, light) {
+    --#{$name}: #{$value};
+  }
+  @each $name, $value in tokens.$radii {
+    --#{$name}: #{$value};
+  }
+  @each $name, $value in tokens.$breakpoints {
+    --breakpoint-#{$name}: #{$value};
+  }
+  @each $name, $value in tokens.$motion {
+    --#{$name}: #{$value};
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  @each $name, $value in map.get(tokens.$colors, dark) {
+    --#{$name}: #{$value};
+  }
+}

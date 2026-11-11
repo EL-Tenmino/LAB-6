@@ -1,0 +1,35 @@
+@use "../abstracts/mixins" as *;
+
+@include respond(wide) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include respond(tablet) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+  .site-nav__inner {
+    align-items: flex-start;
+  }
+  .site-nav__links {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@include respond(phone) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+  .site-header h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  .site-nav__links a {
+    padding: 7px 9px;
+  }
+}

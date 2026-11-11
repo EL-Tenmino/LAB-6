@@ -1,0 +1,20 @@
+{
+  "name": "lab-7",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sass --style=compressed --no-source-map scss/main.scss style.css",
+    "dev": "sass --watch --no-source-map scss/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EL-Tenmino/lab-6.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EL-Tenmino/lab-6/issues"
+  },
+  "homepage": "https://github.com/EL-Tenmino/lab-6#readme",
+  "devDependencies": {
+    "sass": "1.97.3"
+  },
+  "private": true
+}

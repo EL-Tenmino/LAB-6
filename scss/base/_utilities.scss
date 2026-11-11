@@ -1,0 +1,13 @@
+@use "../abstracts/functions" as fn;
+
+$margin-top: (
+  0: 0,
+  1rem: fn.rem(16px),
+  28: 28px,
+);
+
+@each $name, $value in $margin-top {
+  .u-mt-#{$name} {
+    margin-top: $value;
+  }
+}

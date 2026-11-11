@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as *;
+.site-footer {
+  padding: 24px 0;
+  color: var(--header-text);
+  background: var(--header);
+}
+.site-footer__inner {
+  @include flex-center($justify: space-between);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.site-footer p {
+  margin: 0;
+  font-size: 14px;
+}

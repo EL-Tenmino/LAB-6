@@ -1,0 +1,20 @@
+@use "../abstracts/mixins" as *;
+#loader {
+  @include flex-center($justify: null);
+  gap: 12px;
+  padding: 12px 0 20px;
+}
+.spinner {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin var(--loader-duration) linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

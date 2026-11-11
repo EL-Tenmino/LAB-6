@@ -1,0 +1,31 @@
+.multimedia p {
+  margin-bottom: 16px;
+}
+video,
+iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--small-radius);
+}
+video {
+  height: auto;
+  background: var(--header);
+}
+iframe {
+  background: var(--soft);
+}
+details {
+  margin: 16px 0;
+}
+summary {
+  cursor: pointer;
+  padding-block: 8px;
+}
+.text-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--accent);
+  text-decoration: underline;
+}

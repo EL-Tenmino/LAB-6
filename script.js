@@ -27,13 +27,13 @@ themeButton.addEventListener("click", () => {
 
 // Нүүр, арын харагдах байдлыг дэлгэц уншигчид мөн шинэчилнэ.
 function setFlipped(card, flipped) {
-  card.classList.toggle("is-flipped", flipped);
-  const button = card.querySelector(".flip-button");
+  card.classList.toggle("card--flipped", flipped);
+  const button = card.querySelector(".card__flip-button");
   const title = card.querySelector("h3").textContent;
   button.setAttribute("aria-pressed", String(flipped));
   button.textContent = flipped ? "Буцаах ↶" : "Мэдээлэл харах ↻";
   button.setAttribute("aria-label", `${title}: ${flipped ? "нүүр талд буцах" : "зургийн мэдээлэл харах"}`);
-  [[".card-front", flipped], [".card-back", !flipped]].forEach(([selector, hidden]) => {
+  [[".card__front", flipped], [".card__back", !flipped]].forEach(([selector, hidden]) => {
     const face = card.querySelector(selector);
     face.setAttribute("aria-hidden", String(hidden));
     face.inert = hidden;
@@ -41,11 +41,11 @@ function setFlipped(card, flipped) {
 }
 
 document.querySelectorAll(".card").forEach(card => {
-  const button = card.querySelector(".flip-button");
+  const button = card.querySelector(".card__flip-button");
   setFlipped(card, false);
   button.hidden = false;
   button.addEventListener("click", () => {
-    setFlipped(card, !card.classList.contains("is-flipped"));
+    setFlipped(card, !card.classList.contains("card--flipped"));
   });
   card.addEventListener("keydown", event => {
     if (event.key === "Escape") {
